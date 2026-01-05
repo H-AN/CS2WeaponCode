@@ -94,3 +94,100 @@ private static readonly Dictionary<int, (string Name, string Class)> ItemDefinit
     { 5027, ("Bloodhound Gloves", "studded_bloodhound_gloves") },
     { 4725, ("Broken Fang Gloves", "studded_brokenfang_gloves") },
 };
+
+public readonly Dictionary<string, WeaponData> WeaponAmmoMap = new()
+{
+    { "weapon_deagle", new WeaponData { ClipSize = 7, ReserveAmmo = 35 } },
+    { "weapon_elite", new WeaponData { ClipSize = 30, ReserveAmmo = 120 } },
+    { "weapon_fiveseven", new WeaponData { ClipSize = 20, ReserveAmmo = 100 } },
+    { "weapon_glock", new WeaponData { ClipSize = 20, ReserveAmmo = 120 } },
+    { "weapon_ak47", new WeaponData { ClipSize = 30, ReserveAmmo = 90 } },
+    { "weapon_aug", new WeaponData { ClipSize = 30, ReserveAmmo = 90 } },
+    { "weapon_awp", new WeaponData { ClipSize = 25, ReserveAmmo = 30 } },
+    { "weapon_famas", new WeaponData { ClipSize = 25, ReserveAmmo = 90 } },
+    { "weapon_g3sg1", new WeaponData { ClipSize = 20, ReserveAmmo = 90 } },
+    { "weapon_galilar", new WeaponData { ClipSize = 35, ReserveAmmo = 90 } },
+    { "weapon_m249", new WeaponData { ClipSize = 100, ReserveAmmo = 200 } },
+    { "weapon_m4a1", new WeaponData { ClipSize = 30, ReserveAmmo = 90 } },
+    { "weapon_mac10", new WeaponData { ClipSize = 30, ReserveAmmo = 100 } },
+    { "weapon_p90", new WeaponData { ClipSize = 50, ReserveAmmo = 100 } },
+    { "weapon_mp5sd", new WeaponData { ClipSize = 30, ReserveAmmo = 120 } },
+    { "weapon_ump45", new WeaponData { ClipSize = 25, ReserveAmmo = 100 } },
+    { "weapon_xm1014", new WeaponData { ClipSize = 7, ReserveAmmo = 32 } },
+    { "weapon_bizon", new WeaponData { ClipSize = 64, ReserveAmmo = 120 } },
+    { "weapon_mag7", new WeaponData { ClipSize = 5, ReserveAmmo = 32 } },
+    { "weapon_negev", new WeaponData { ClipSize = 150, ReserveAmmo = 300 } },
+    { "weapon_sawedoff", new WeaponData { ClipSize = 7, ReserveAmmo = 32 } },
+    { "weapon_tec9", new WeaponData { ClipSize = 18, ReserveAmmo = 90 } },
+    { "weapon_taser", new WeaponData { ClipSize = 1, ReserveAmmo = 1 } },
+    { "weapon_hkp2000", new WeaponData { ClipSize = 13, ReserveAmmo = 52 } },
+    { "weapon_mp7", new WeaponData { ClipSize = 30, ReserveAmmo = 120 } },
+    { "weapon_mp9", new WeaponData { ClipSize = 30, ReserveAmmo = 120 } },
+    { "weapon_nova", new WeaponData { ClipSize = 8, ReserveAmmo = 32 } },
+    { "weapon_p250", new WeaponData { ClipSize = 13, ReserveAmmo = 26 } },
+    { "weapon_scar20", new WeaponData { ClipSize = 20, ReserveAmmo = 90 } },
+    { "weapon_sg556", new WeaponData { ClipSize = 30, ReserveAmmo = 90 } },
+    { "weapon_ssg08", new WeaponData { ClipSize = 10, ReserveAmmo = 90 } },
+    { "weapon_m4a1_silencer", new WeaponData { ClipSize = 20, ReserveAmmo = 80 } },
+    { "weapon_usp_silencer", new WeaponData { ClipSize = 12, ReserveAmmo = 24 } },
+    { "weapon_cz75a", new WeaponData { ClipSize = 12, ReserveAmmo = 12 } },
+    { "weapon_revolver", new WeaponData { ClipSize = 8, ReserveAmmo = 8 } },
+};
+
+public readonly Dictionary<string, float> OriginalWeaponFireRate = new()
+{
+    // Pistols
+    {"weapon_deagle", 0.225f},
+    {"weapon_r8_revolver", 0.5f},
+    {"weapon_elite", 0.12f},
+    {"weapon_fiveseven", 0.15f},
+    {"weapon_glock", 0.15f},
+    {"weapon_hkp2000", 0.17f},
+    {"weapon_usp_s", 0.17f},
+    {"weapon_usp_silencer", 0.17f},
+    {"weapon_p250", 0.15f},
+    {"weapon_cz75a", 0.1f},
+    {"weapon_tec9", 0.12f},
+    {"weapon_revolver", 0.4f},
+
+    // Shotguns
+    {"weapon_xm1014", 0.35f},
+    {"weapon_nova", 0.88f},
+    {"weapon_mag7", 0.85f},
+    {"weapon_sawedoff", 0.85f},
+
+    // SMGs
+    {"weapon_bizon", 0.08f},
+    {"weapon_mac10", 0.075f},
+    {"weapon_mp7", 0.08f},
+    {"weapon_mp5sd", 0.08f},
+    {"weapon_mp9", 0.07f},
+    {"weapon_p90", 0.07f},
+    {"weapon_ump45", 0.09f},
+
+    // Rifles
+    {"weapon_ak47", 0.1f},
+    {"weapon_aug", 0.1f},
+    {"weapon_aug_scoped", 0.1f},
+    {"weapon_famas", 0.09f},
+    {"weapon_famas_burst", 0.075f},
+    {"weapon_galilar", 0.09f},
+    {"weapon_m4a1", 0.09f},
+    {"weapon_m4a1_silencer", 0.1f},
+    {"weapon_sg556", 0.11f},
+    {"weapon_sg556_scoped", 0.11f},
+    {"weapon_g3sg1", 0.25f},
+    {"weapon_scar20", 0.25f},
+
+    // LMGs
+    {"weapon_m249", 0.08f},
+    {"weapon_negev", 0.075f},
+
+    // Snipers
+    {"weapon_awp", 1.455f},
+    {"weapon_g3sg1_scoped", 0.25f},
+    {"weapon_scar20_scoped", 0.25f},
+    {"weapon_ssg08", 1.25f},
+    {"weapon_ssg08_scoped", 1.25f},
+};
+
