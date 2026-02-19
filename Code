@@ -191,3 +191,43 @@ public readonly Dictionary<string, float> OriginalWeaponFireRate = new()
     {"weapon_ssg08_scoped", 1.25f},
 };
 
+public static readonly Dictionary<string, float> WeaponReloadingTimeList = new()
+{
+    {"weapon_deagle", 0.87f},
+    {"weapon_elite", 2.90f},
+    {"weapon_fiveseven", 0.93f},
+    {"weapon_glock", 0.93f},
+    {"weapon_ak47", 1.17f},
+    {"weapon_aug", 1.53f},
+    {"weapon_awp", 2.00f},
+    {"weapon_famas", 1.63f},
+    {"weapon_g3sg1", 2.60f},
+    {"weapon_galilar", 1.17f},
+    {"weapon_m249", 3.73f},
+    {"weapon_m4a1", 1.37f},
+    {"weapon_mac10", 1.27f},
+    {"weapon_p90", 1.97f},
+    {"weapon_mp5sd", 1.97f},
+    {"weapon_ump45", 1.5f},
+    {"weapon_xm1014", 0.53f},
+    {"weapon_bizon", 1.17f},
+    {"weapon_mag7", 1.07f},
+    {"weapon_negev", 3.83f},
+    {"weapon_sawedoff", 0.55f},
+    {"weapon_tec9", 1.33f},
+    // {"weapon_taser", 1},
+    {"weapon_hkp2000", 0.97f},
+    {"weapon_mp7", 1.43f},
+    {"weapon_mp9", 0.87f},
+    {"weapon_nova", 0.54f},
+    {"weapon_p250", 0.93f},
+    {"weapon_scar20", 1.40f},
+    {"weapon_sg556", 1.03f},
+    {"weapon_ssg08", 1.97f},
+    {"weapon_m4a1_silencer", 1.37f},
+    {"weapon_usp_silencer", 0.97f},
+    {"weapon_cz75a", 1.17f},
+    {"weapon_revolver", 1.97f}
+
+};
+
